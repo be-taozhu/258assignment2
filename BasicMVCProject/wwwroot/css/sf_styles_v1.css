@@ -1,0 +1,453 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/*
+   
+   Author:   
+   Date:     
+   
+   Filename: sf_styles1.css
+   
+   This file contains the layout styles used in the sheepfarms consultants
+   home page.
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+html {
+   /*background: url(tf_back1.png) center center / cover no-repeat fixed;*/
+   min-height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+body {
+   background: rgb(134, 176, 232);
+   /* box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px; */
+   min-width: 320px;
+   margin: auto;
+   min-height: 100%;
+   max-width: max-content;
+   line-height: 1.2;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: rgb(134,176,232);
+}
+body header img {
+   display: block;
+   max-width: 100%;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(228, 237, 228);
+   min-height: 2em;
+   max-height: 125px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+}
+nav.horizontal li {
+   /*color: rgb(31, 73, 125);*/
+   color: rgb(94, 95, 94);
+   display: inline-block;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+nav.horizontal a:visited, nav.horizontal a:link {
+   /*color: rgb(31, 73, 125);*/
+  /* color: orange;*/
+   color: rgb(94, 95, 94);
+}
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(94, 95, 94);
+   color: orange;
+   width: auto;
+}
+
+/* Vertical Navigation Styles */
+
+/* nav.vertical {
+    background-color: rgb(249, 250, 249);
+    min-height: 2em;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+nav.vertical ul {
+    margin-left: 1em;
+    line-height: 2em;
+}
+/* nav.vertical li {
+    color: rgb(31, 73, 125);
+    display: block;
+    line-height: 2em;
+    text-transform: uppercase;
+}*/
+/* nav.vertical a {
+    display: block;
+    font-size: 1em;
+} */
+nav.vertical a:visited, nav.vertical a:link {
+    color: rgb(94, 95, 94);
+}
+
+nav.vertical a:hover, nav.vertical a:active {
+    /*background-color: rgb(94, 95, 94);*/
+    color:  rgb(249, 250, 249);
+    text-decoration: underline;
+}
+
+/* Contact Info Styles */
+
+section#contactInfo p {
+   line-height: 1.4em;
+   margin: 1em;
+}
+
+/* Main Menu Styles */
+
+ul.mainmenu {
+   display: block;
+}
+ul.mainmenu > li {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+/*ul.mainmenu > li:first-of-type a {
+   color: white;
+   background-color: rgb(31, 73, 125);
+}*/
+.sheepy-icon {
+    height: 200px;
+    padding-top: 10px;
+}
+.sheep1-img {
+   float: left;
+   max-height: 100%;
+   max-width: 40%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.sheep2-img {
+   float: right;
+   max-height: 100%;
+   max-width: 45%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.sheep3-img {
+   float: left;
+   max-height: 100%;
+   max-width: 40%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+/* Submenu Styles */
+
+ul.submenu {
+   width: auto;
+   background-color: rgb(177, 179, 174);
+   display: none;
+}
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+   padding-left: 10px;
+   padding-right: 10px;
+   display:flex;
+   position: relative;
+   flex-direction: column;
+   position: absolute;
+   z-index: 1;
+}
+/* Section columns */
+
+/* Create three unequal columns that floats next to each other */
+
+.column {
+   float: left;
+   padding: 10px;
+}
+ /* Left and right column */
+
+.column.side {
+   width: 10%;
+   padding-bottom: 30px;
+}
+ /* Middle column */
+
+.column.middle {
+   width: 80%;
+   padding-bottom: 30px;
+}
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+/* Section Styles */
+
+section {
+   background-color: rgb(207, 222, 172);
+   clear: both;
+}
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+section img {
+   display: block;
+   width: 100%;
+}
+section p {
+   line-height: 1.2em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+section h1 {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+section p a {
+   text-decoration: none;
+   color: orange;
+}
+
+/* Aside Styles */
+
+aside {
+   display: block;
+   background-color: rgb(181, 204, 136);
+}
+
+/* About Us */
+#about {
+    outline: 1px solid  rgb(94, 95, 94);
+    max-width: 100%;
+}
+.about-img {
+    /* max-height: 100%;*/
+    float: left;
+    max-height: 50%;
+    max-width: 25%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+#header {
+    color: rgb(94, 95, 94);
+    font-size: 1.5em;
+    line-height: 2em;
+   text-transform: uppercase;
+   align-items: center;
+   text-indent: 2px;
+}
+.about_h2 {
+   color: rgb(94, 95, 94);
+   line-height: 3em;
+
+   text-transform: uppercase;
+   align-items: center;
+   text-indent: 2px;
+}
+div.row-about {
+    clear: both;
+}
+div.row-about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Achievements Formatting */
+
+.achieve-img1 {
+   float: left;
+   max-height: 20%;
+   max-width: 20%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.achieve-img2 {
+   float: right;
+   max-height: 20%;
+   max-width: 20%;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+/* Footer Styles */
+
+.container{
+    max-width:1 170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: rgb(228, 237, 228);
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: rgb(94, 95, 94);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(94, 95, 94);
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(94, 95, 94);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: orange;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(94, 95, 94);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.footer .copyright {
+    color: rgb(94, 95, 94);
+    width: 100%;
+    line-height: 150px;
+    text-align: center;
+}
+
+/* New Styles Added Below */
+
+
+
+/* mobile styles 0px to 480px */
+@media only screen and (max-width: 480px) {
+
+    .sheepy-icon {
+        height: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .navbar .container-item {
+        width: 100%;
+    }
+    .active {
+        display: block;
+    }
+    .about-img {
+        /* max-height: 100%;*/
+         float: left;
+         max-height: 50%;
+          max-width: 50%;
+          padding-top: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+    .section {
+        font-size: small;
+    }
+}
+
+/* tablet styles 481px and greater*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/* desktop styles 769px and greater*/
+
+@media only screen and (min-width: 769px) {
+
+}
+
+/*   Responsive layout - makes the three columns stack on top of each other instead of next to each other   */
+
+@media screen and (max-width: 600px) {
+   .column.side, .column.middle {
+     width: 100%;
+   }
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+
